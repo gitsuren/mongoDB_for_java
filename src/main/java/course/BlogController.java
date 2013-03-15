@@ -31,6 +31,7 @@ import static spark.Spark.setPort;
  * to three Data Access Objects (DAOs).
  * <p/>
  * It is also the entry point into the web application.
+ * So you should start from here...
  */
 public class BlogController {
     private final Configuration cfg;
