@@ -118,7 +118,7 @@ public class BlogPostDAO {
         BasicDBList comments = (BasicDBList) post.get("comments");
         BasicDBObject comment = new BasicDBObject();
         comment.put("author", name);
-        if (email == null) {
+        if (email == null || email.equals("")) {
             System.out.println("EMAIL was null");
         } else {
             comment.put("email", email);
